@@ -1,0 +1,1 @@
+API_KEY = "6de440b8cd0a227284a2323ae3d75062"  #API pessoa, por isto não compartilhada.

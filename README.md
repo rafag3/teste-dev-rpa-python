@@ -33,19 +33,14 @@ E gerar arquivos CSV organizados com as seguintes informações:
 
 ---
 
-## Estrutura do projeto
+## Arquitetura
 
-teste3001/
-│
-├── models.py # Modelo de dados (Clima)
-├── scraping.py # Coleta via web scraping
-├── api.py # Coleta via API pública
-├── csv_writer.py # Escrita dos arquivos CSV
-│
-├── data/
-│ ├── clima_scraping.csv
-│ └── clima_api.csv
-│
-└── README.md
+Projeto estruturado em camadas:
 
-**A estrutura foi mantida simples de propósito, priorizando legibilidade e clareza, sem overengineering, já que o escopo do teste é reduzido. Obrigado e à disposição!** 
+- domain: regras de negócio
+- infra: integração externa (API / CSV)
+- services: casos de uso
+- controllers: interface
+- main: ponto de entrada
+
+Inspirado em MVC / Clean Architecture.
